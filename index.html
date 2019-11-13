@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Light Search</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="/Images/Icon.jpg">
+  </head>
+  <body>
+    <!-- light box element -->
+    <div id="light-box">
+      <span class="close-btn">&times;</span>
+      <!-- image with an empty src attribute -->
+      <img src="" />
+    </div>
+    <!-- Website logo -->
+    <img id="ikonen" src="/images/Icon.jpg" alt="icon">
+    <!-- Heading element -->
+    <h1>Light Search</h1>
+    <!-- main content goes here -->
+       <div class="main">
+         <!-- form element -->
+         <form>
+           <!-- input element 
+                autocomplete is set to "off" so that search history will not be display while clicking inside text input
+          -->
+              <input autocomplete="off" class="searchTerm" type="text" name="Search"  placeholder="Search images...">
+              <!-- A select element with different options -->
+              <select id="selectOption">
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="40">40</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+                <!-- form submit button -->
+              <button id="btnClick">Search</button>
+        </form>
+            </div>
+<h4>The search engine that doesn't track you. Help Spread Light Search!</h4>
+    </div>
+    <!-- This is where all images will be displayed inside -->
+    <div id="output"></div>
+    <!-- script tag to link with external javascript file to html document -->
+    <script src="main.js"></script>
+  </body>
+</html>
